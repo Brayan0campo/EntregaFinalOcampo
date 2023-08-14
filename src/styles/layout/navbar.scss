@@ -1,0 +1,59 @@
+@import "../base/variables";
+
+.header-navbar {
+    max-width: 68.75rem;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__logo {
+        color: $color-tx-primary;
+        font-size: 1.1em;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+        filter: drop-shadow(0 0 .0625rem #25262a);
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3.3rem 0;
+
+        a {
+            font: bold .875em $font-family;
+            color: $color-tx-primary;
+            margin: 0 1.25rem;
+            transition: 0.5s;
+            filter: drop-shadow(0 0 .0625rem #25262a);
+
+
+            &:hover {
+                color: $color-tx-secondary;
+            }
+        }
+    }
+
+    &__cart {
+        display: flex;
+        align-items: center;
+
+        img {
+            margin-right: 5px;
+            color: $color-tx-primary;
+            width: 28px;
+        }
+
+        .cart-link {
+            display: flex;
+            align-items: center;
+
+            span {
+                color: $color-tx-primary;
+                font: bold 1.1em $font-family;
+            }
+        }
+    }
+}

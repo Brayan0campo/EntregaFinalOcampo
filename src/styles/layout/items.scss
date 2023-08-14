@@ -1,0 +1,308 @@
+@import "../base/variables";
+
+.item-container {
+  margin-top: 1.75rem;
+
+  .title {
+    text-align: center;
+    font: bold 1.3em $font-family;
+    color: $color-tx-primary;
+    filter: drop-shadow(0 0 0.06rem $color-tx-primary);
+  }
+}
+
+.item-list {
+  max-width: 68.75rem;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2.5rem;
+}
+
+.item-container {
+  margin-top: 2.75rem;
+  margin-bottom: 30px;
+  text-align: center;
+
+  &__card {
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 0.3125rem;
+    text-shadow: 0 0 0.125rem $color-tx-primary;
+    box-shadow: 0 0.3125rem 0.9375rem 0 rgba(56, 56, 56, 0.37);
+    transition: transform 0.3s ease;
+
+    h2 {
+      background-color: #ffffff;
+    }
+
+    &:hover {
+      transform: scale(1.04);
+    }
+  }
+
+  img {
+    width: 9.375rem;
+  }
+
+  &__link {
+    background-color: #393939;
+    box-shadow: 0 5px 15px 0 rgba(56, 56, 56, 0.37);
+    color: $color-bg-primary;
+    padding: 0.6rem 2rem;
+    margin: 25px 0 20px 0;
+    font: bold 14px $font-family;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    transition: 0.5s;
+
+    &:hover {
+      background-color: #6a4bf1;
+    }
+
+    .Option {
+      color: #ffffff;
+    }
+  }
+}
+
+.item-detail_container {
+  max-width: 68.75rem;
+  margin: 0 auto;
+}
+
+.item-detail {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  &__card {
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 0.3125rem;
+    text-shadow: 0 0 0.125rem $color-tx-primary;
+    box-shadow: 0 0.3125rem 0.9375rem 0 rgba(56, 56, 56, 0.37);
+
+    h2 {
+      background-color: #ffffff;
+    }
+  }
+
+  &__link {
+    background-color: #6a4bf1;
+    box-shadow: 0 5px 15px 0 rgba(56, 56, 56, 0.37);
+    color: #ffffff;
+    padding: 0.6rem 2rem;
+    font: bold 0.875rem $font-family;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    transition: 0.5s;
+
+    &:hover {
+      background-color: #393939;
+    }
+  }
+
+  &__cart {
+    margin: 30px;
+  }
+
+  img {
+    width: 15.625rem;
+  }
+}
+
+.item-count {
+  &__controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  &__buttons {
+    background-color: #6a4bf1;
+    box-shadow: 0 0.3125rem 0.9375rem 0 rgba(56, 56, 56, 0.37);
+    color: #ffffff;
+    margin: 0.4375rem;
+    padding: 0.3rem 1.5rem;
+    cursor: pointer;
+    border-radius: 0.3rem;
+  }
+
+  &__button3 {
+    background-color: #6a4bf1;
+    box-shadow: 0 5px 15px 0 rgba(56, 56, 56, 0.37);
+    color: #ffffff;
+    padding: 0.6rem 2rem;
+    font: bold 0.875rem $font-family;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    transition: 0.5s;
+
+    &:hover {
+      background-color: #393939;
+    }
+  }
+}
+
+.cart-item {
+  max-width: 68.75rem;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+
+  h4 {
+    font: bold 1.3em $font-family;
+    color: $color-tx-primary;
+    filter: drop-shadow(0 0 0.06rem $color-tx-primary);
+  }
+
+  p {
+    margin-top: 20px;
+    font: normal 1.1em $font-family;
+    color: $color-tx-primary;
+  }
+
+  button {
+    background-color: #db4242;
+    box-shadow: 0 5px 15px 0 rgba(56, 56, 56, 0.37);
+    color: #ffffff;
+    margin: 25px 0 20px 0;
+    padding: 0.6rem 2rem;
+    font: bold 0.875rem $font-family;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    transition: 0.5s;
+
+    &:hover {
+      background-color: #393939;
+    }
+  }
+}
+
+.cart-container {
+  max-width: 68.75rem;
+  margin: 0 auto;
+  margin-top: 60px;
+  text-align: center;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 0.3125rem;
+  text-shadow: 0 0 0.125rem $color-tx-primary;
+  box-shadow: 0 0.3125rem 0.9375rem 0 rgba(56, 56, 56, 0.37);
+
+  .cart-total {
+    padding-top: 50px;
+
+    button {
+      background-color: #db4242;
+      box-shadow: 0 5px 15px 0 rgba(56, 56, 56, 0.37);
+      color: #ffffff;
+      margin: 25px 0 20px 0;
+      padding: 0.6rem 2rem;
+      font: bold 0.875rem $font-family;
+      cursor: pointer;
+      border-radius: 0.3rem;
+      transition: 0.5s;
+
+      &:hover {
+        background-color: #393939;
+      }
+    }
+
+    .btn-checkout {
+      background-color: #3f9c75;
+      box-shadow: 0 5px 15px 0 rgba(56, 56, 56, 0.37);
+      color: #ffffff;
+      margin: 25px 0 20px 0;
+      margin-left: 20px;
+      padding: 0.6rem 2rem;
+      font: bold 0.875rem $font-family;
+      cursor: pointer;
+      border-radius: 0.3rem;
+      transition: 0.5s;
+
+      &:hover {
+        background-color: #393939;
+      }
+    }
+  }
+}
+
+.cart-empty {
+  max-width: 68.75rem;
+  margin: 0 auto;
+  margin-top: 60px;
+  text-align: center;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 0.3125rem;
+  text-shadow: 0 0 0.125rem $color-tx-primary;
+  box-shadow: 0 0.3125rem 0.9375rem 0 rgba(56, 56, 56, 0.37);
+
+  h2 {
+    font: bold 1.7em $font-family;
+    color: $color-tx-primary;
+    filter: drop-shadow(0 0 0.06rem $color-tx-primary);
+    margin-bottom: 40px;
+  }
+
+  .btn-products {
+    background-color: #6a4bf1;
+    box-shadow: 0 5px 15px 0 rgba(56, 56, 56, 0.37);
+    color: #ffffff;
+    padding: 0.6rem 2rem;
+    font: bold 0.875rem $font-family;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    transition: 0.5s;
+
+    &:hover {
+      background-color: #393939;
+    }
+  }
+}
+
+.checkout-container {
+  max-width: 68.75rem;
+  margin: 0 auto;
+  margin-top: 60px;
+  text-align: center;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 0.3125rem;
+  text-shadow: 0 0 0.125rem $color-tx-primary;
+  box-shadow: 0 0.3125rem 0.9375rem 0 rgba(56, 56, 56, 0.37);
+
+  .form-container {
+    margin-top: 50px;
+
+    input {
+      margin-top: 20px;
+    }
+
+    span {
+      font-weight: bold;
+    }
+
+    button {
+      margin-top: 50px;
+      margin-bottom: 30px;
+
+      background-color: #3f9c75;
+      box-shadow: 0 5px 15px 0 rgba(56, 56, 56, 0.37);
+      color: #ffffff;
+      padding: 0.6rem 2rem;
+      font: bold 0.875rem $font-family;
+      cursor: pointer;
+      border-radius: 0.3rem;
+      transition: 0.5s;
+
+      &:hover {
+        background-color: #393939;
+      }
+    }
+  }
+}
